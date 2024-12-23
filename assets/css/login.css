@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+#login_area {
+  width: 90%;
+  max-width: 400px;
+  margin: 120px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+#login_area h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+#login_area button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5BBBA9;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+#login_area button:hover {
+  background-color: #4aa898;
+}
+
+.redirect {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.redirect a {
+  color: #5BBBA9;
+  text-decoration: none;
+}
+
+.redirect a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #login_area {
+    width: 95%;
+    margin: 80px auto;
+    padding: 20px;
+  }
+  #login_area h2 {
+    font-size: 18px;
+  }
+  .input-group input {
+    font-size: 13px;
+  }
+  #login_area button {
+    font-size: 13px;
+    padding: 8px;
+  }
+}

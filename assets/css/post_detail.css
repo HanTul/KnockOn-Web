@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f8;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px;
+}
+
+#post_area {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.post-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.post-meta .meta-item {
+  margin-right: 15px;
+}
+
+.post-body {
+  padding: 20px;
+}
+
+.post-content {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  margin-bottom: 30px;
+}
+
+.post-footer {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.action-button {
+  background-color: #5BBBA9;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #4aa898;
+}
+
+.action-button.secondary {
+  background-color: #ddd;
+  color: #333;
+}
+
+.action-button.secondary:hover {
+  background-color: #ccc;
+}
+
+@media (max-width: 768px) {
+  #post_area {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  .post-header, .post-body, .post-footer {
+    padding: 15px;
+  }
+
+  .post-title {
+    font-size: 18px;
+  }
+
+  .post-meta {
+    font-size: 12px;
+  }
+
+  .post-content {
+    font-size: 13px;
+  }
+
+  .action-button {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}

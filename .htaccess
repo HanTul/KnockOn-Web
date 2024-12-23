@@ -1,0 +1,17 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/index.php$
+RewriteRule ^index.php$ / [L,R=301]
+
+RewriteRule ^post_detail/([0-9]+)$ includes/post_detail.php?post_id=$1 [L]
+RewriteRule ^delete/([0-9]+)$ includes/delete.php?post_id=$1 [L,QSA]
+RewriteRule ^edit/([0-9]+)$ includes/edit.php?post_id=$1 [L,QSA]
+RewriteRule ^write$ includes/write.php [L,QSA]
+
+
+RewriteRule ^login$ /includes/login.php [L,QSA]
+RewriteRule ^register$ /includes/register.php [L,QSA]
+RewriteRule ^logout$ /includes/logout.php [L,QSA]
+RewriteRule ^admin$ includes/admin.php [L,QSA]
+
+RewriteRule ^search$ index.php [L,QSA]
